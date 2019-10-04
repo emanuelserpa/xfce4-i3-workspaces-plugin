@@ -483,8 +483,8 @@ set_button_label(GtkWidget *button, i3workspace *workspace,
         i3WorkspacesConfig *config)
 {
     static gchar *template = "<span foreground=\"#%06X\" weight=\"%s\">%s</span>";
-    static gchar *focused_weight = "normal";
-    static gchar *blurred_weight = "normal";
+    static gchar *focused_weight = "bold";
+    static gchar *blurred_weight = "bold";
 
     gchar *name = config->strip_workspace_numbers ?
         strip_workspace_numbers(workspace->name, workspace->num) :
