@@ -67,10 +67,10 @@ set_button_label(GtkWidget *button, i3workspace *workspace,
 static gchar *
 strip_workspace_numbers(const gchar *name, int num);
 
-static void
-on_workspace_clicked(GtkWidget *button, gpointer data);
-static gboolean
-on_workspace_scrolled(GtkWidget *ebox, GdkEventScroll *ev, gpointer data);
+//static void
+//on_workspace_clicked(GtkWidget *button, gpointer data);
+//static gboolean
+//on_workspace_scrolled(GtkWidget *ebox, GdkEventScroll *ev, gpointer data);
 
 static void
 on_workspace_created(gpointer data);
