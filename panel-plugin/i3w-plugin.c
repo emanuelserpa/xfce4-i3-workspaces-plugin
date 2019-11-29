@@ -345,11 +345,11 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
             (i3_workspaces->config->output[0] == 0 ||
              g_strcmp0(i3_workspaces->config->output, workspace->output) == 0))
         {
-            GtkWidget * button;
-            button = xfce_panel_create_button();
-            gtk_button_set_label(GTK_BUTTON(button), workspace->name);
+            //GtkWidget * button;
+            //button = xfce_panel_create_button();
+            //gtk_button_set_label(GTK_BUTTON(button), workspace->name);
 
-            set_button_label(button, workspace, i3_workspaces->config);
+            //set_button_label(button, workspace, i3_workspaces->config);
 
             //g_signal_connect(G_OBJECT(button), "clicked",
             //        G_CALLBACK(on_workspace_clicked), i3_workspaces);
