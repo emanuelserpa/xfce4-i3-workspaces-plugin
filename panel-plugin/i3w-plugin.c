@@ -358,11 +358,11 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
             xfce_panel_plugin_add_action_widget(i3_workspaces->plugin, button);
 
             /* avoid acceleration key interference */
-            ///gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
+            //gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
             //gtk_box_pack_end(GTK_BOX(i3_workspaces->hvbox), button, FALSE, FALSE, 0);
             //gtk_widget_show(button);
 
-            //g_hash_table_insert(i3_workspaces->workspace_buttons, workspace, button);
+            g_hash_table_insert(i3_workspaces->workspace_buttons, workspace, button);
         }
     }
 }
