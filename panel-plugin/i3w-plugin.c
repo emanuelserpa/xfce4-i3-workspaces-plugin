@@ -355,7 +355,7 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
             //        G_CALLBACK(on_workspace_clicked), i3_workspaces);
 
             /* show the panel's right-click menu on this button */
-            xfce_panel_plugin_add_action_widget(i3_workspaces->plugin, button);
+            //xfce_panel_plugin_add_action_widget(i3_workspaces->plugin, button);
 
             /* avoid acceleration key interference */
             gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
