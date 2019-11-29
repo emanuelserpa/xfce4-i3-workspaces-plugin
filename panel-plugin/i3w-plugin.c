@@ -69,8 +69,8 @@ strip_workspace_numbers(const gchar *name, int num);
 
 //static void
 //on_workspace_clicked(GtkWidget *button, gpointer data);
-//static gboolean
-//on_workspace_scrolled(GtkWidget *ebox, GdkEventScroll *ev, gpointer data);
+static gboolean
+on_workspace_scrolled(GtkWidget *ebox, GdkEventScroll *ev, gpointer data);
 
 static void
 on_workspace_created(gpointer data);
@@ -351,8 +351,8 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
 
             set_button_label(button, workspace, i3_workspaces->config);
 
-            g_signal_connect(G_OBJECT(button), "clicked",
-                    G_CALLBACK(on_workspace_clicked), i3_workspaces);
+            //g_signal_connect(G_OBJECT(button), "clicked",
+            //        G_CALLBACK(on_workspace_clicked), i3_workspaces);
 
             /* show the panel's right-click menu on this button */
             xfce_panel_plugin_add_action_widget(i3_workspaces->plugin, button);
