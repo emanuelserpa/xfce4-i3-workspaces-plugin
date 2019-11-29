@@ -359,8 +359,8 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
 
             /* avoid acceleration key interference */
             //gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
-            gtk_box_pack_end(GTK_BOX(i3_workspaces->hvbox), button, FALSE, FALSE, 0);
-            gtk_widget_show(button);
+           // gtk_box_pack_end(GTK_BOX(i3_workspaces->hvbox), button, FALSE, FALSE, 0);
+            //gtk_widget_show(button);
 
             g_hash_table_insert(i3_workspaces->workspace_buttons, workspace, button);
         }
