@@ -347,9 +347,9 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
         {
             GtkWidget * button;
             button = xfce_panel_create_button();
-            //gtk_button_set_label(GTK_BUTTON(button), workspace->name);
+            gtk_button_set_label(GTK_BUTTON(button), workspace->name);
 
-            //set_button_label(button, workspace, i3_workspaces->config);
+            set_button_label(button, workspace, i3_workspaces->config);
 
             //g_signal_connect(G_OBJECT(button), "clicked",
             //        G_CALLBACK(on_workspace_clicked), i3_workspaces);
@@ -358,7 +358,7 @@ add_workspaces(i3WorkspacesPlugin *i3_workspaces)
             xfce_panel_plugin_add_action_widget(i3_workspaces->plugin, button);
 
             /* avoid acceleration key interference */
-            gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
+            //gtk_button_set_use_underline(GTK_BUTTON(button), FALSE);
             gtk_box_pack_end(GTK_BOX(i3_workspaces->hvbox), button, FALSE, FALSE, 0);
             gtk_widget_show(button);
 
